@@ -1,8 +1,10 @@
 package practice01;
 
+import javafx.beans.binding.BooleanExpression;
 import org.junit.Test;
 
 import static org.fest.assertions.api.Assertions.assertThat;
+
 
 public class Practice01Test {
     @Test
@@ -13,10 +15,11 @@ public class Practice01Test {
     }
 
     // 打开注释以继续
-//    @Test
-//    public void should_person_have_an_introduce_method_which_introduce_person_with_name_and_age() throws Exception {
-//        Person tom = new Person("Tom", 21);
-//        String introduce = tom.introduce();
-//        assertThat(introduce).isEqualTo("My name is Tom. I am 21 years old.");
-//    }
+    @Test
+    public void should_person_have_an_introduce_method_which_introduce_person_with_name_and_age() throws Exception {
+        Person tom = new Person("Tom", 21);
+        String introduce = tom.introduce();
+        assertThat(introduce).isEqualTo("My name is Tom. I am 21 years old.");
+    }
+
 }
